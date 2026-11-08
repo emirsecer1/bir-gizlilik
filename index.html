@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bir · Gizlilik Politikası</title>
+<style>
+  :root { --bg: #fff7f9; --card: #ffffff; --ink: #21171b; --muted: #6b5960; --accent: #d6265e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17121a; --card: #221b24; --ink: #fbeef3; --muted: #c6b4bc; --accent: #ff6c91; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font: 600 34px/1.2 Georgia, serif; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 6px; color: var(--accent); }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); font-size: 15px; }
+  section { background: var(--card); border-radius: 18px; padding: 4px 20px 16px; margin-top: 16px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Bir · Bizim hikâyemiz</h1>
+  <p class="muted">Gizlilik Politikası · Son güncelleme: 8 Kasım 2026</p>
+
+  <p>Bir, iki kişinin ortak anılarını, mektuplarını ve planlarını sakladığı bir uygulamadır. Ortak içerik uçtan uca şifrelenir: yalnızca iki partnerin telefonu açabilir; sunucu ve geliştirici içeriği okuyamaz.</p>
+
+  <section>
+    <h2>Hesap</h2>
+    <p>Partnerinle bağlanırken e-posta, telefon numarası ya da ad istemeden anonim bir hesap oluşturulur. Bu hesap rastgele bir kimlikten ibarettir.</p>
+
+    <h2>Uçtan uca şifrelenen veriler</h2>
+    <p>Anılar ve fotoğrafları, mektuplar, planlar, hayaller, sevgi nedenleri, kuponlar, günün sorusu cevapları, notlar, ortak profil (isimler, lakaplar, ilk gün, doğum günleri, şarkı, uygulama simgesi seçimi) ve canlı konum telefonda şifrelenir. Sunucuda yalnızca okunamaz şifreli veri durur. Şifreleme anahtarı yalnızca iki telefonun güvenli kasasındadır.</p>
+
+    <h2>Sunucunun görebildikleri</h2>
+    <p>Hizmetin çalışması için sunucu şunları görür: anonim hesap kimliği, hangi iki hesabın eşleştiği, kayıtların sayısı ve oluşturulma zamanları, fotoğraf dosyalarının boyutu, mektupların açılış tarihi, canlı konum paylaşımının süresi (konumun kendisi değil), bildirim için cihaz bildirim kimliği ve kötüye kullanımı önlemek için işlem zamanları.</p>
+  </section>
+
+  <section>
+    <h2>Konum</h2>
+    <p>Konum varsayılan olarak kapalıdır. “Bir kez paylaş” dediğinde konumun bir kez alınır, saklanmaz ve sunucuya gönderilmez. “Canlı paylaş” dediğinde seçtiğin süre boyunca (15 dakika ile 8 saat arası) konumun telefonda şifrelenip partnerine iletilir; uygulama kapalıyken de bu süre boyunca güncellenir ve Android'de kalıcı bir bildirim görünür. Yalnızca son konum tutulur, geçmiş hareket kaydı tutulmaz; süre dolunca ya da ikinizden biri durdurunca paylaşım silinir.</p>
+
+    <h2>Fotoğraflar</h2>
+    <p>Fotoğraflarına yalnızca senin seçtiklerin için erişilir. Kamera, mikrofon ve rehber kullanılmaz.</p>
+
+    <h2>Bildirimler</h2>
+    <p>Partnerine giden bildirimler genel metindir (ör. “Partnerin şu an seni düşünüyor.”) ve içerik taşımaz. Bildirimler Expo ile Google ve Apple bildirim servisleri üzerinden iletilir.</p>
+
+    <h2>Widgetlar</h2>
+    <p>Açarsan ilk gününüz, doğum günlerinin ay ve günü ve tema yalnızca bu telefonun widget alanına kopyalanır. “Seni düşündüm” widget düğmesi yalnızca partnerine genel bildirim gönderebilen ayrı bir izin kullanır.</p>
+
+    <h2>Anahtar yedeği (isteğe bağlı)</h2>
+    <p>Açarsan şifreleme anahtarın Google'ın uçtan uca şifreli yedeğine (Android) ya da iCloud Anahtar Zinciri'ne (iPhone) kaydedilir. Bu veri Bir'in sunucusuna gitmez.</p>
+  </section>
+
+  <section>
+    <h2>Yalnızca telefonda kalanlar</h2>
+    <p>Telefon numarası, ruh hâli, uygulama kilidi ve diğer ayarlar, renk teması ve oluşturduğun duvar kâğıtları hiçbir zaman sunucuya gönderilmez.</p>
+
+    <h2>Reklam, analiz ve satış</h2>
+    <p>Uygulamada reklam, analiz ya da üçüncü taraf takip kodu yoktur. Veriler satılmaz, reklam için kullanılmaz ve üçüncü taraflarla paylaşılmaz.</p>
+
+    <h2>Hizmet sağlayıcılar</h2>
+    <p>Şifreli veriler Supabase üzerinde, Avrupa Birliği'nde (Frankfurt) barındırılır. Bildirimler Expo, Google Firebase Cloud Messaging ve Apple Push Notification service üzerinden iletilir.</p>
+  </section>
+
+  <section>
+    <h2>Saklama ve silme</h2>
+    <p>Uygulamadaki “Bağlantıyı kaldır” ortak alana erişimini bitirir ve bu telefondaki anahtarı siler. Ortak alanda tek kalan kişi “Ortak alanı sil” ile fotoğraflar dahil tüm ortak kayıtları sunucudan kalıcı olarak silebilir; iki kişi de ayrılınca ortak alan sunucudan silinir. “Bu cihazdaki tüm verileri sil” telefondaki her şeyi siler.</p>
+    <p>Anonim hesabının ve sunucudaki tüm verilerinin silinmesini istemek için <a href="mailto:muhammedemirsecer@gmail.com?subject=Bir%20hesap%20silme">muhammedemirsecer@gmail.com</a> adresine yaz. Kimliğini doğrulamak için gerekirse uygulamadan küçük bir adım isteyebiliriz. Talep 30 gün içinde yerine getirilir.</p>
+
+    <h2>Çocuklar</h2>
+    <p>Bir 13 yaşından küçükler için tasarlanmamıştır.</p>
+
+    <h2>Değişiklikler ve iletişim</h2>
+    <p>Bu politika değişirse bu sayfa güncellenir. Soruların için: <a href="mailto:muhammedemirsecer@gmail.com">muhammedemirsecer@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
